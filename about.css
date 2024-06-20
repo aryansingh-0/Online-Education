@@ -1,0 +1,52 @@
+h1 {
+    margin-top: 8vmax;
+    text-align: center;
+}
+
+
+
+#about {
+    display: flex;
+    height: 100%;
+    padding: 2vmax;
+    justify-content: space-around;
+}
+
+
+
+.about {
+    margin-top: 1vmax;
+    width: 60%;
+    display: flex;
+
+    text-align: center;
+}
+
+.about-img {
+    width: 40%;
+    height: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    height: 45vmax;
+    margin-top: -20vmax;
+}
+
+
+@media screen and (max-width: 670px) {
+    .about-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        height: 35vmax;
+        margin-top: -60vmax;
+    }
+
+}

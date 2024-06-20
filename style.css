@@ -1,0 +1,300 @@
+* {
+   margin: 0;
+   padding: 0%;
+   color: white;
+}
+
+.section {
+   background-image: linear-gradient(rgb(59, 164, 75), rgba(172, 255, 47, 0.1));
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+
+}
+
+section {
+   background-color: rgba(172, 255, 47, 0.572);
+   height: 100vh;
+   width: 100vw;
+
+}
+
+.nav {
+   height: 8vmin;
+   background-color: rgba(0, 0, 0, 0.227);
+   display: flex;
+   position: fixed;
+   top: 0%;
+   width: 100%;
+   z-index: 5;
+   align-items: center;
+}
+
+.nav>span {
+   color: white;
+   width: 30%;
+   padding-left: 3vmin;
+}
+
+#navigation {
+   display: flex;
+   width: 70%;
+   justify-content: space-around;
+
+}
+
+a {
+   text-decoration: none;
+   font-size: 3vmin;
+   color: white;
+   transition-property: color, font-size;
+   transition-duration: 0.3s;
+   text-transform: capitalize;
+}
+
+.active,
+.a:hover {
+   color: rgb(255, 200, 0);
+   font-size: 4vmin;
+}
+
+.hero {
+   height: 92vmin;
+   width: 100%;
+   animation: goes linear;
+   animation-timeline: view();
+   animation-range: entry cover 40%;
+   display: flex;
+}
+
+.hero-prt1,
+.hero-prt2 {
+   width: 50%;
+   height: 100%;
+   position: relative;
+   margin-top: 4vmax;
+
+
+}
+
+.hero-prt1>h1 {
+   color: white;
+   margin-top: 5vmax;
+   font-size: 15vmin;
+   text-align: center;
+}
+
+.hero-prt1>h2 {
+   color: rgb(252, 199, 1);
+   font-size: 18vmin;
+   text-align: center;
+}
+
+
+.hero-prt2>img {
+   height: 100%;
+}
+
+
+.boxes {
+   height: 8vmax;
+   width: 80%;
+   margin: 0 10%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.box {
+   height: 80%;
+   width: 20%;
+   display: flex;
+   align-items: center;
+   background-color: rgb(146, 141, 141);
+   border-radius: 2vmin;
+   color: white;
+   font-size: 5vmax;
+   justify-content: space-evenly;
+}
+
+.box-icon {
+   width: 50%;
+   text-align: center;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box-text {
+   width: 50%;
+   text-wrap: wrap;
+   height: 100%;
+
+}
+
+.box-text>h4 {
+   padding-top: 15%;
+   font-size: 5vmin;
+   display: flex;
+   align-items: center;
+}
+
+#box-text-span {
+   font-size: 3vmin;
+   display: flex;
+   align-items: center;
+
+}
+
+.thinkBox {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   animation: appear linear;
+   animation-timeline: view();
+   animation-range: entry cover 40%;
+}
+
+.think-img {
+   width: 40%;
+}
+
+.think-img>img {
+   height: 30vmax;
+
+}
+
+.think-text {
+   color: rgb(160, 65, 65);
+   width: 40%;
+   font-size: 3rem;
+}
+
+h3 {
+   color: rgb(43, 39, 39);
+}
+
+p {
+   color: rgb(46, 77, 0);
+   font-size: 1rem;
+   margin-top: 1rem;
+}
+
+button {
+   color: white;
+   border: none;
+
+   background-color: gray;
+   transition-property: color, background-color, box-shadow;
+   transition-duration: 0.4s;
+   border-radius: 2vmin;
+   height: 3vmax;
+   width: 10vmax;
+   cursor: pointer;
+   margin-left: 40%;
+   font-size: 3vmin;
+}
+
+button:hover {
+   color: grey;
+   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+   background-color: rgb(255, 255, 255);
+}
+
+@keyframes appear {
+   from {
+      opacity: 0;
+      scale: 0.5;
+   }
+
+   to {
+      opacity: 1;
+      scale: 1;
+   }
+}
+
+
+@keyframes goes {
+   from {
+      opacity: 1;
+      scale: 1;
+   }
+
+   to {
+      opacity: 0;
+      scale: 0.5;
+   }
+}
+
+
+
+
+
+
+
+#btn {
+   margin-left: 0%;
+}
+
+
+
+
+
+footer {
+   height: 30vmin;
+   background-color: #b0da73;
+   border-top: 2px solid black;
+
+   color: white;
+   padding: 20px 0;
+   text-align: center;
+}
+
+.footer-container {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-section {
+   flex: 1;
+   min-width: 250px;
+   padding: 10px;
+}
+
+.footer-section h3 {
+   color: #3d40d4;
+}
+
+.footer-section a {
+   color: #000000;
+   text-decoration: none;
+}
+
+.footer-section a:hover {
+   text-decoration: underline;
+}
+
+.footer-bottom {
+   margin-top: 20px;
+   background-color: #b0da73;
+}
+
+.footer-bottom p {
+   margin: 0;
+}
+
+.social-icon {
+   display: inline-block;
+   margin: 0 10px;
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.social-icon:hover {
+   text-decoration: underline;
+}

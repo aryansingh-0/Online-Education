@@ -1,0 +1,182 @@
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(235, 209, 10);
+}
+
+p {
+    font-size: 0.8rem;
+
+}
+
+label {
+    padding-top: 2vmin;
+    color: black;
+    font-weight: 600;
+}
+
+#form {
+    margin-top: 1vmin;
+
+    width: 100%;
+    height: 80%;
+
+}
+
+.form {
+    margin-top: -10vmin;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+button {
+    background-color: rgb(79, 200, 79);
+    box-shadow: 0 0px 16px 0 rgba(22, 70, 44, 0.24), 0 0px 50px 0 rgba(12, 99, 6, 0.19);
+}
+
+
+input,
+textarea {
+    outline: none;
+    background-color: rgba(131, 156, 173, 0.577);
+    width: 80%;
+    color: white;
+    margin-bottom: 1vmax;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+
+}
+
+input:hover,
+textarea:hover {
+    box-shadow: 0px 5px 20px 0.5px rgba(235, 209, 10, 0.489);
+}
+
+label {
+    margin-bottom: 0.5vmax;
+}
+
+hr {
+    color: rgb(235, 209, 10);
+    font-size: larger;
+    width: 20vmin;
+    font-weight: 600;
+    margin-top: -12vmin;
+}
+
+input {
+    border: 0px solid;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.contact-left {
+    border: none;
+    height: 80%;
+    margin-top: -8vmin;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input:focus {
+    outline-color: transparent;
+    border: none;
+}
+
+input {
+    border-radius: 1vmin;
+    height: 5vmin;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+textarea {
+    height: 15vmin;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 1vmin;
+    border: none;
+    font-weight: 900;
+    resize: none;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: grab;
+}
+
+.contact-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.contact-box {
+    margin-top: 5vmax;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+}
+
+.contact-left {
+    width: 40%;
+    height: 80%;
+}
+
+img {
+    object-fit: contain;
+    height: 30vmax;
+    margin-top: -15vmax;
+}
+
+
+@media screen and (max-width: 542px) {
+    .contact-right {
+        display: none;
+    }
+
+    .contact-left {
+        width: 80vmax;
+    }
+
+    #form {
+        height: 100%;
+    }
+
+    .form {
+        width: 80vw;
+    }
+
+}
